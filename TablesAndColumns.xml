@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StorageMap name="DataMasking Utility">
+
+	<table name="ADDRESSTYPES" schema="WASADMIN" pkid="ADDRESSTYPE">
+		<column>DESCRIPTION</column>
+		<column>UBCODETYPE</column>
+	</table>
+	
+
+</StorageMap>

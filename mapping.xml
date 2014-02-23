@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<mapping>
+	<description>A mapping file for Data Masking Utility</description>
+
+	<class name="Table">
+		<field name="name" type="string">
+			<bind-xml name="name" node="attribute" />
+		</field>
+		<field name="pkid" type="string">
+			<bind-xml name="pkid" node="attribute" />
+		</field>
+		<field name="schema" type="string">
+			<bind-xml name="schema" node="attribute" />
+		</field>
+		<field name="column" type="string" collection="collection"/>
+	</class>
+
+	<class name="StorageMap">
+		<field name="name" type="string">
+			<bind-xml name="name" node="attribute" />
+		</field>
+		<field name="table" type="Table"
+			collection="collection" />
+	</class>
+
+</mapping>
